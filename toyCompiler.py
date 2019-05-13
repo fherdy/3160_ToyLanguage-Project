@@ -183,9 +183,9 @@ def main():
         try:
                 # To run under both python 2 & Python3
             if 3 == sys.version_info.major:
-                text = input('calc> ')
+                text = input('input> ')
             if 2 == sys.version_info.major:
-                text = input('calc> ')
+                text = input('input> ')
         except EOFError:
             break
         if not text:
