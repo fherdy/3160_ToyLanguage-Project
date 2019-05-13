@@ -1,7 +1,3 @@
-# Token types
-#
-# EOF (end-of-file) token is used to indicate that
-# there is no more input left for lexical analysis
 import sys
 INTEGER, PLUS, MINUS, MUL, DIV, EOF = (
     'INTEGER', 'PLUS', 'MINUS', 'MUL', 'DIV', 'EOF'
@@ -163,36 +159,20 @@ class Interpreter(object):
         return result
 
 
-# def main():
-#     while True:
-#         try:
-#             # To run under Python3 replace 'raw_input' call
-#             # with 'input'
-#             text = raw_input('calc> ')
-#         except EOFError:
-#             break
-#         if not text:
-#             continue
-#         lexer = Lexer(text)
-#         interpreter = Interpreter(lexer)
-#         result = interpreter.expr()
-#         print(result)
-
 def main():
     while True:
         try:
-                # To run under both python 2 & Python3
-            if 3 == sys.version_info.major:
-                text = input('input> ')
-            if 2 == sys.version_info.major:
-                text = input('input> ')
+            # To run under Python3 replace 'raw_input' call
+            # with 'input'
+            text = input('input> ')
         except EOFError:
             break
         if not text:
             continue
-        interpreter = Interpreter(text)
+        lexer = Lexer(text)
+        interpreter = Interpreter(lexer)
         result = interpreter.expr()
         print(result)
 
- if __name__ == '__main__':
+if __name__ == '__main__':
    main()
