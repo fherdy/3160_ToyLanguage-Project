@@ -133,7 +133,7 @@ class Interpreter(object):
                 result = result / self.factor()
 
         return result
-
+ 
     def expr(self):
         """Arithmetic expression parser / interpreter.
 
