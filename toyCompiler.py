@@ -3,7 +3,6 @@ INTEGER, PLUS, MINUS, MUL, DIV, EOF = (
     'INTEGER', 'PLUS', 'MINUS', 'MUL', 'DIV', 'EOF'
 )
 
-
 class Token(object):
     def __init__(self, type, value):
         # token type: INTEGER, PLUS, MINUS, MUL, DIV, or EOF
