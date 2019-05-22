@@ -14,6 +14,11 @@ x-y=2
 y+x/2=4
 ```
 
+### Testing
+``` cmd
+    To test for the various inputs, varible declaration and all the test code must be in the parser function in the bottom of the code.
+```
+
 ### Sample inputs and outputs
     Input 1
     x = 001;
