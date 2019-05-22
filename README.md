@@ -14,7 +14,6 @@ x-y=2
 y+x/2=4
 ```
 
-
 ### Sample inputs and outputs
     Input 1
     x = 001;
