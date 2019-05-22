@@ -17,6 +17,23 @@ y+x/2=4
 ### Testing
 ``` cmd
     To test for the various inputs, varible declaration and all the test code must be in the parser function in the bottom of the code.
+    
+    try:
+    parser.parse("""
+    x = 1;
+    y = 2;
+    z = ---(x+y)*(x+-y);
+    
+    
+    /***
+    
+    Test should be in here.
+    
+    ***/
+    
+    
+    
+    """)
 ```
 
 ### Sample inputs and outputs
